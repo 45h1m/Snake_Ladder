@@ -1,0 +1,108 @@
+.chakka {
+    height: 70px;
+    width: 70px;
+    padding: 5px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.514);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    transition: 500ms;
+   }
+
+   .chakka.roll {
+
+    transform: rotateY(360deg) rotate(360deg);
+   }
+ 
+   .one {
+    display: none;
+   }
+ 
+   .circles {
+    width: 15px;
+    height: 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #070000;
+   }
+ 
+   .two {
+    width: 100%;
+    display: none;
+   }
+ 
+   .two>.col {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: rotate(45deg);
+   }
+ 
+   .three {
+    width: 100%;
+    display: none;
+   }
+ 
+   .three>.col {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: rotate(45deg);
+   }
+ 
+   .four {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    display: none;
+   }
+ 
+   .four>.colF {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 20%;
+   }
+ 
+   button {
+    padding: 10px;
+   }
+ 
+   .five,
+   .six {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+   }
+ 
+   .fcol {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: calc(100% / 6);
+    align-items: center;
+   }
+
+   @keyframes rot {
+        0% {
+
+           transform: rotateY(360deg) rotate(360deg);
+        } 100%{
+            
+            transform: rotateY(0deg) rotate(0deg);
+        }
+   }

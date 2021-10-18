@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.918);
+}
+
+body {
+  background: #18131b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  width: 100vmin;
+  aspect-ratio: 1/1;
+  background: rgba(139, 8, 69, 0.534);
+  border-radius: 50%;
+  -webkit-filter: blur(70px);
+          filter: blur(70px);
+  z-index: -50;
+}
+
+main {
+  width: 95vmin;
+  aspect-ratio: 1/1;
+  -webkit-box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.13);
+          box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.13);
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+  grid-gap: 3px;
+  overflow: hidden;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+main.blur {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+}
+
+main .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3vmin;
+}
+
+main img {
+  position: absolute;
+  max-width: 80vmin;
+  -webkit-filter: drop-shadow(0px 0px 3px black);
+          filter: drop-shadow(0px 0px 3px black);
+}
+
+main img:nth-child(1) {
+  top: 4%;
+  left: 26%;
+  width: 32vmin;
+}
+
+main img:nth-child(2) {
+  -o-object-fit: fill;
+     object-fit: fill;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  top: 53%;
+  left: 31%;
+  width: 35vmin;
+  height: 50%;
+}
+
+main img:nth-child(3) {
+  -o-object-fit: fill;
+     object-fit: fill;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  top: 24%;
+  left: 8%;
+  width: 30vmin;
+  height: 35%;
+}
+
+main img:nth-child(4) {
+  -o-object-fit: fill;
+     object-fit: fill;
+  -webkit-transform: rotate(28deg);
+          transform: rotate(28deg);
+  top: 25%;
+  left: 78%;
+  width: 25vmin;
+  height: 45%;
+}
+
+main img:nth-child(5) {
+  -webkit-transform: rotate(-80deg);
+          transform: rotate(-80deg);
+  top: 10%;
+  left: 5%;
+  width: 54vmin;
+}
+
+main img:nth-child(6) {
+  -webkit-transform: rotate(-95deg);
+          transform: rotate(-95deg);
+  top: 13%;
+  left: 48%;
+  width: 54vmin;
+}
+
+main img:nth-child(7) {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  top: 52%;
+  left: 10%;
+  width: 40vmin;
+}
+
+main img:nth-child(8) {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  top: 5%;
+  left: 53%;
+  width: 30vmin;
+}
+
+main img:nth-child(9) {
+  -webkit-transform: rotate(90deg) rotateY(180deg);
+          transform: rotate(90deg) rotateY(180deg);
+  top: 53%;
+  left: -6%;
+  width: 26vmin;
+}
+
+main img:nth-child(10) {
+  -webkit-transform: rotate(80deg) rotateY(180deg);
+          transform: rotate(80deg) rotateY(180deg);
+  top: 73%;
+  left: 65%;
+  width: 26vmin;
+}
+
+main .player {
+  position: fixed;
+  width: 7vmin;
+  aspect-ratio: 1/1;
+  background: red;
+  border-radius: 50%;
+  bottom: 1.1%;
+  left: 1.1%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  -webkit-box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.471), inset 0 0 0 10px rgba(255, 255, 255, 0.271), 0 0 2px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.471), inset 0 0 0 10px rgba(255, 255, 255, 0.271), 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.winner {
+  position: fixed;
+  font-size: 5rem;
+  text-shadow: 0 3px 30px black;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.winner.animate {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/*# sourceMappingURL=style.css.map */
