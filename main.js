@@ -18,8 +18,6 @@ async function mainPlay() {
 
     if(wait) return;
 
-    console.log('run')
-
     currPlayer = (currPlayer == 1) ? currPlayer = 0 : currPlayer = 1;
     
     let diceVal = roll();
